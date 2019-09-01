@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 720px;
+  padding: 30px 10px 0;
+}
+
+.checkBlock {
+  border-bottom: 1px solid #d7d8dc;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__btn {
+    position: relative;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    box-shadow: none;
+    border-bottom: 1px solid #d7d8dc;
+    bottom: -1px;
+    padding: 10px 8px;
+    padding-bottom: 11px;
+    margin-right: 10px;
+
+    &:hover {
+      background-color: #eee;
+    }
+
+    &.active {
+      border-bottom: 2px solid #ff4800;
+      padding-bottom: 10px;
+    }
+
+  }
+
+  .favorites {
+    padding-left: 20px;
+    background-image: url('./img/star.png');
+    background-position: center left;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+}
+
+.listBlock {
+
+}
+
+.tournament {
+  &Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d7d8dc;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+
+    &__title {
+      font-weight: 700;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    &__favoritBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+
+
+}
+.matches {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 12px;
+  box-sizing: border-box;
+  border-bottom: 1px dotted #d7d8dc;
+
+
+  &__time {
+    color: #969ba1;
+    padding-right: 10px;
+    width: 30px;
+
+  }
+
+  &__teams {
+    font-size: 10px;
+    margin-right: auto;
+  }
+
+  &__result {
+    margin-right: 60px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__status {
+    font-size: 10px;
+    width: 130px;
+    margin-right: 10px;
+    &.delay{
+      color: #fd552b;
+    }
+    &.fin{
+      color: #bcbfc5;
+    }
+  }
+
+  &__label {
+    width: 14px;
+  }
+
+  &__check {
+    &.hidden {
+      display: none;
+    }
+  }
+}
